@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>FSTN - Home</title>
-	<link/>
+	<title>FS Team Napier - Team</title>
+	<link rel="stylesheet" href="stylesheet.css" type="text/css">
 	<script>
 	
 	</script>
@@ -13,22 +13,22 @@
 		<nav>
 			<ul class="navBar">
 				<li class="navLink"><a href="index.html">Home</a></li>
-				<li class="navLink"><a href="">About</a></li>
-				<li class="navLink"><a href="">Team</a></li>
-				<li class="navLink"><a href="">Sponsors</a></li>
-				<li class="navLink"><a href="">Media</a></li>
-				<li class="navLink"><a href="">Join</a></li>
+				<!-- <li class="navLink"><a href="about.html">About</a></li> -->
+				<li class="navLink"><a href="team.html">Team</a></li>
+				<li class="navLink"><a href="sponsors.html">Sponsors</a></li>
+				<!-- <li class="navLink"><a href="media.html">Media</a></li> -->
+				<li class="navLink"><a href="https://www.napierstudents.com/organisation/societies/formulastudent/"><strong>Join</strong></a></li>
 			</ul>
 		</nav>
 		
-		<img src="" id="bigLogo"/>
+		<img src="images/whiteLogo.png" id="bigLogo"/>
 		<h2>TEAM NAPIER</h2>
-		<h1>MEET THE TEAM</h1>
+		<h1>THE TEAM</h1>
 		
 		<p>Meet the team in their respective departments and their leads. We are currently
 		up over 80+ members! Wanting to learn more about how to join our team?</p>
 		
-		<button type="button" onClick="JoinUs()" autofocus>Join Us</button>
+		<a href="https://www.napierstudents.com/organisation/societies/formulastudent/"><button class="redButton" type="button" autofocus>Join Us</button></a>
 		
 	</header>
 	<main>
@@ -36,68 +36,87 @@
 			<h3>MANAGEMENT ROLES</h3>
 		</section>
 		
-		<section>
-			<table id="managementTable">
-				<tr id="topRow">
-					<td>
-						<img/>
-						<p></p>
-						<p></p>
-					</td>
-					<td>
-						<img/>
-						<p></p>
-						<p></p>
-					</td>
-					<td>
-						<img/>
-						<p></p>
-						<p></p>
-					</td>
-				</tr>
-				<tr id="midRow">
-					<td>
-						<img/>
-						<p></p>
-						<p></p>
-					</td>
-					<td>
-						<img/>
-						<p></p>
-						<p></p>
-					</td>
-					<td>
-						<img/>
-						<p></p>
-						<p></p>
-					</td>
-				</tr>
-				<tr id="bottomRow">
-					<td>
-						<img/>
-						<p></p>
-						<p></p>
-					</td>
-					<td>
-						<img/>
-						<p></p>
-						<p></p>
-					</td>
-					<td>
-						<img/>
-						<p></p>
-						<p></p>
-					</td>
-				</tr>
-			</table>
+		<section class="roles">
+			<div class="person">
+				<div class="personImage">
+					<img src="images/anonymousHeadshot.jpg" alt="" class="personImg">
+				</div>
+				<div class="personDesc">
+					<h3>Patrick Horne</h3>
+					<h4>Team Principal</h4>
+				</div>
+			</div>
+			<div class="person">
+				<div class="personImage">
+					<img src="images/anonymousHeadshot.jpg" alt="" class="personImg">
+				</div>
+				<div class="personDesc">
+					<h3>Harrison Brown</h3>
+					<h4>Chief Engineer</h4>
+				</div>
+			</div>
+			<div class="person">
+				<div class="personImage">
+					<img src="images/anonymousHeadshot.jpg" alt="" class="personImg">
+				</div>
+				<div class="personDesc">
+					<h3>Lee Beaver</h3>
+					<h4>Driverless Lead</h4>
+				</div>
+			</div>
+			<div class="person">
+				<div class="personImage">
+					<img src="images/anonymousHeadshot.jpg" alt="" class="personImg">
+				</div>
+				<div class="personDesc">
+					<h3>Keir Bailey</h3>
+					<h4>Operations Manager</h4>
+				</div>
+			</div>
+			<div class="person">
+				<div class="personImage">
+					<img src="images/anonymousHeadshot.jpg" alt="" class="personImg">
+				</div>
+				<div class="personDesc">
+					<h3>Georgia Miller</h3>
+					<h4>PR & Marketing Manager</h4>
+				</div>
+			</div>
+			<div class="person">
+				<div class="personImage">
+					<img src="images/anonymousHeadshot.jpg" alt="" class="personImg">
+				</div>
+				<div class="personDesc">
+					<h3>Cameron Davidson</h3>
+					<h4>Sponsorships Manager</h4>
+				</div>
+			</div>
+			<div class="person">
+				<div class="personImage">
+					<img src="images/anonymousHeadshot.jpg" alt="" class="personImg">
+				</div>
+				<div class="personDesc">
+					<h3>Head of Workshop</h3>
+					<h4>Luke Youll</h4>
+				</div>
+			</div>
+			<div class="person">
+				<div class="personImage">
+					<img src="images/anonymousHeadshot.jpg" alt="" class="personImg">
+				</div>
+				<div class="personDesc">
+					<h3>Matthew O'Donnell</h3>
+					<h4>Sim Racing Lead</h4>
+				</div>
+			</div>
 		</section>
 	</main>
 	
 	<footer>
 		<ul class="footerList">
-			<li>&copy; 2023 Formula Student Team Napier</li>
-			<li>FSTN Data Protection Statement</li>
-			<li>FormulaStudent@napier.ac.uk</li>
+			<li><p class="copy">&copy;</p> 2024 Formula Student Team Napier</li>
+			<li><a href="dataProtection.html" style="color:white;">FSTN Data Protection Statement</a></li>
+			<li>formulastudent@napier.ac.uk</li>
 		</ul>
 		
 	</footer>
