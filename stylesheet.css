@@ -2,15 +2,32 @@ body{
 	padding:0;
 	margin:0;
 	font-family:Verdana;
+	min-height:100vh;
+	max-width:100vw;
+	
+	animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+	
+	background-image:linear-gradient(#0E172C,#1A2541);
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 
 /* MAIN PAGE HEADING */
 header{
 	background:#0E172C;
-	margin-top:-16px;
 	color:white;
-	padding:50px 150px;
+	height:40vw;
+	padding:0 5vw;
 }
 
 header h1, header h2{
@@ -19,30 +36,39 @@ header h1, header h2{
 
 header h1{
 	color:#E00814;
-	margin-top:-30px;
-	font-size:68px;
+	font-size:3vw;
+	margin-top:-1vw;
 }
 
 header h2{
 	color:white;
-	font-size:52px;
+	font-size:2vw;
 }
 
 header p{
-	font-size:18px;
-	width:700px;
+	font-size:1vw;
+	width:40vw;
+}
+
+h3{
+	font-size:1.5vw;
+}
+
+#leftHeader{
+	float:left;
+	width:45vw;
 }
 
 #bigLogo{
-	width:175px;
-	margin-top:140px;
+	width:10vw;
+	margin-top:10vw;
 }
 
 .mainImage{
-	opacity:0.5;
-	z-index:-1;
-	display:block;
+	opacity:0.2;
+	height:40vw;
 	position:absolute;
+	top:0;
 	right:0;
 }
 
@@ -53,32 +79,93 @@ header p{
 	list-style-type:none;
 	display:block;
 	position:absolute;
-	right:0px;
+	right:0;
+	z-index:1;
+	margin-top:2vw;
 }
 
 .navLink{
 	float:left;
 	display:block;
-	margin-right:70px;
+	margin-right:5vw;
 }
 
 .navLink a{
 	text-decoration:none;
 	color:white;
-	font-size:18px;
+	font-size:1vw;
 	z-index:1;
+	transition: 0.5s ease-out font-size;
 }
 
 .navLink a:hover{
-	text-decoration:underline #E00814 3px;
+	text-decoration:underline #E00814 0.1vw;
+	font-size:1.1vw;
+	line-height:1.1vw;
+	display:block;
+	font-weight:bold;
 	
 }
 
+/* PRIVACY POLICY */
+.statement{
+	font-size:0.8vw;
+	color:white;
+	padding:2vw 5vw;
+}
+
+
 /* SPONSORS BANNER STYLING */
 #sponsorsBanner{
-	height:200px;
-	background-color:#2F3B67;
+  align-items: center;
+  background: #e3e3e3;
+  justify-content: center;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: #2F3B67;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  height:100px;
+  width:100%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, #2F3B67 0%, rgba(47, 59, 103, 0) 100%);
+  content: "";
+  height:100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height:100px;
+  width: 250px;
+}
+
 
 /* BUTTONS */
 .redButton{
@@ -86,32 +173,19 @@ header p{
 	background-color:#E00814;
 }
 
-.whiteButton{
-	color:#2F3B67;
-	background-color:white;
-}
-
-.redButton,.whiteButton{
-	border-radius:15px;
+.redButton{
+	border-radius:1vw;
 	border-style:none;
-	padding:12px 20px;
-	font-size:18px;
+	padding:0.5vw 1vw;
+	font-size:1vw;
 	font-weight:bold;
 }
 
 /* MEDIA SLIDES */
 #mediaScrollerSection{
 	background-image: linear-gradient(#0E172C,#1A2541);
-	height:750px;
+	height:50vw;
 }
-
-
-/* EVENTS TABLES */
-.eventsSection{
-	background-image: linear-gradient(#0E172C,#1A2541);
-	padding:50px 150px;
-}
-
 
 /* COLLAPSING MENUS */
 .collapsableMenu{
@@ -121,18 +195,126 @@ header p{
 #teamInfo, #competitionInfo{
 	background-image: linear-gradient(#0E172C,#1A2541);
 	height:fit-content;
-	padding:50px 150px;
+	padding:4vw 5vw;
 	color:white;
+}
+
+.dropdownText{
+	font-size:0.8vw;
 }
 
 
 
 /* TITLE BANNERS */
-.titleBanner{
+.titleBanner, .statementHeader{
 	background-color:#2F3B67;
 	color:white;
-	padding:30px 150px;
+	padding:1.5vw 5vw;
 }
+
+.statementHeader{
+	margin-top:-5vw;
+}
+
+
+
+/* TEAM PAGE ROLES */
+.roles{
+	padding:3vw 5vw;
+}
+
+.person{
+	float:left;
+	border-radius:5vw;
+	background-color:#2F3B67;
+	box-shadow: 5px 10px 5px;
+	width:19vw;
+	margin-right:2vw;
+	margin-bottom:2vw;
+	height:20vw;
+	transition:0.5s ease-out;
+}
+
+.person:hover .personImage{
+	width:14vw;
+	height:14vw;
+}
+
+.person:hover .personDesc{
+	margin-top:1vw;
+}
+
+.personImage{
+	border-radius:50%;
+	background-color:white;
+	width:12vw;
+	height:12vw;
+	margin:auto;
+	margin-top:1vw;
+	transition:0.5s ease-out;
+	overflow:hidden;
+}
+
+.personImg{
+	width:100%;
+}
+
+.personDesc{
+	width:100%;
+	margin:auto;
+	margin-top:2vw;
+	justify-content:center;
+	transition:0.5s ease-out;
+}
+
+.personDesc h3{
+	font-size:1vw;
+	transition:0.5s ease-out;
+	color:white;
+	text-align:center;
+}
+
+.personDesc h4{
+	font-size:0.9vw;
+	transition:0.5s ease-out;
+	margin-top:-1vw;
+	color:white;
+	opacity:0.6;
+	font-weight:none;
+	text-align:center;
+}
+
+.personDesc p{
+	transition:0.5s ease-out;
+	color:white;
+	font-size:0.8vw;
+	font-family:Verdana;
+	text-align:center;
+}
+	
+/* SPONSOR PAGE */
+.partnerImage{
+	width:30%;
+}
+
+.partner{
+	border-radius:2vw;
+	margin:auto;
+	margin-top:1vw;
+	margin-bottom:1vw;
+	margin-left:5vw;
+	display:flex;
+	justify-content:;
+}
+
+.partnerDesc{
+	color:white;
+	width:30vw;
+	padding:1vw 1vw 1vw 2vw;
+	border-left:0.1vw solid white;
+	font-size:0.8vw;
+}
+
 
 
 
@@ -141,9 +323,110 @@ footer{
 	clear:left;
 	background-color:#0E172C;
 	color:white;
-	padding:30px 150px;
+	padding:2vw 5vw;
 }
 
-footer ul{
+.footerList{
 	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+.copy{
+	display:inline;
+	color:#E00814;
+}
+
+@media only screen and (max-width: 600px){
+	
+	
+	.mainImage{
+		display:none;
+	}
+	
+	nav{
+		display:none;
+	}
+	
+	#leftHeader{
+		width:100vw;
+		float:none;
+	}
+	
+	#bigLogo{
+		margin:10vw 35vw;
+		width:20vw;
+		margin-bottom:0;
+	}
+	
+	header h2{
+		font-size:4vw;
+		width:100%;
+		text-align:center;
+	}
+	
+	header h1{
+		font-size:5vw;
+		width:100%;
+		text-align:center;
+	}
+	
+	header p{
+		font-size:2vw;
+		width:80vw;
+		text-align:center;
+	}
+	
+	header{
+		height:70vw;
+	}
+	
+	
+	
+	.titleBanner h3{
+		font-size:2vw;
+		width:100%;
+		text-align:center;
+	}
+	
+	.redButton{
+		font-size:2.5vw;
+		border-radius:1.5vw;
+		padding:1vw 1.5vw;
+		display:block;
+		text-align:center;
+		text-decoration:none;
+	}
+	
+	.person{
+		width:41vw;
+		height:43vw;
+	}
+	
+	.personImage{
+		width:25vw;
+		height:25vw;
+		margin-top:3vw;
+	}
+	
+	.personDesc{
+		
+	}
+	
+	.person:hover .personImage{
+		width:28vw;
+		height:28vw;
+	}
+	
+	.partnerImageDiv{
+		float:none;
+	}
+	
+	.partnerDesc{
+		width:100%;
+		padding:1vw 1vw 1vw 2vw;
+		border-left:none;
+		border-bottom:0.1vw solid white;
+		font-size:1.8vw;
+	}
 }
