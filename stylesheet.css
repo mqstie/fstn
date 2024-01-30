@@ -303,14 +303,15 @@ h3{
 	width:30%;
 }
 
+.partnerContainer{
+	display:block;
+	margin:auto;
+}
+
 .partner{
 	border-radius:2vw;
 	margin:auto;
-	margin-top:1vw;
-	margin-bottom:1vw;
-	margin-left:5vw;
-	display:flex;
-	justify-content:;
+	display:flex;	
 }
 
 .partnerDesc{
