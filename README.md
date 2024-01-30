@@ -1,7 +1,7 @@
 Hello!
 
 This is the repository used for the Formula Student Team Napier website!
-**CURENTLY A WORK IN PROGRESS**
+**CURRENTLY A WORK IN PROGRESS**
 
 Any suggestions would be greatly appreciated. 
 
