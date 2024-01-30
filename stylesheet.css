@@ -310,7 +310,8 @@ h3{
 
 .partner{
 	border-radius:2vw;
-	margin:auto;
+	margin-left:5vw;
+	margin-top:2vw;
 	display:flex;	
 }
 
