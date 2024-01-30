@@ -206,7 +206,7 @@ h3{
 }
 
 .dropdownText{
-	font-size:0.8vw;
+	font-size:1vw;
 }
 
 
@@ -330,13 +330,13 @@ footer{
 	background-color:#0E172C;
 	color:white;
 	padding:2vw 5vw;
+	font-size:1vw;
 }
 
 .footerList{
 	list-style-type:none;
 	padding:0;
 	margin:0;
-	font-size:0.8vw;
 }
 
 .copy{
