@@ -74,6 +74,10 @@ h3{
 
 
 /* NAV BAR STYLING */
+.mobileNav{
+	display:none;
+}
+
 .navBar{
 	color:white;
 	list-style-type:none;
@@ -165,6 +169,8 @@ h3{
   height:100px;
   width: 250px;
 }
+
+.slide img{ height:100px }
 
 
 /* BUTTONS */
@@ -339,29 +345,97 @@ footer{
 
 @media only screen and (max-width: 600px){
 	
+	body{
+		width:100%;
+	}
+	
+	.mobileNav{
+		display:block;
+	}
+	
+	 /* Style the navigation menu */
+	.topnav {
+		overflow: hidden;
+		background-color: #2F3B67;
+		position: relative;
+	}
+
+	/* Hide the links inside the navigation menu (except for logo/home) */
+	.topnav #myLinks {
+		display: none;
+	}
+
+	/* Style navigation menu links */
+	.topnav a {
+		color: white;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+	}
+
+	/* Style the hamburger menu */
+	.topnav a.icon {
+		background:  #0E172C;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	/* Add a grey background color on mouse-over */
+	.topnav a:hover {
+		background-color: #2E3864;
+		color: white;
+	}
+
+	/* Style the active link (or home/logo) */
+	.active {
+		background-color: #0E172C;
+		color: #0E172C;
+	} 
 	
 	.mainImage{
 		display:none;
 	}
 	
-	nav{
+	.navBar{
 		display:none;
 	}
 	
+	
+	/*SPONSOR MOVING BANNER*/
+	.slider{height:75px;}
+	
+	.slider::before, .slider::after{height:75px;}
+	
+	.slide img{height:75px;}
+	
+	.slider .slide-track{width: calc(250px/4 *3 *14);}
+	
+	.slider::before, .slider::after{
+		width:50px;
+	}
+	
+	
 	#leftHeader{
-		width:100vw;
+		width:100%;
 		float:none;
 	}
 	
 	#bigLogo{
-		margin:10vw 35vw;
+		display:block;
+		margin:auto;
 		width:20vw;
 		margin-bottom:0;
+		margin-top:20px;
 	}
 	
 	header h2{
-		font-size:4vw;
+		font-size:6vw;
 		width:100%;
+		display:block;
+		margin:auto;
 		text-align:center;
 	}
 	
@@ -369,12 +443,18 @@ footer{
 		font-size:5vw;
 		width:100%;
 		text-align:center;
+		display:block;
+		margin:auto;
 	}
 	
 	header p{
-		font-size:2vw;
+		font-size:3vw;
 		width:80vw;
 		text-align:center;
+		display:block;
+		margin:auto;
+		margin-top:20px;
+		margin-bottom:20px;
 	}
 	
 	header{
@@ -384,18 +464,23 @@ footer{
 	
 	
 	.titleBanner h3{
-		font-size:2vw;
+		font-size:4vw;
 		width:100%;
-		text-align:center;
+		margin-left:10px;
+	}
+	
+	.dropdownText{
+		font-size:2.8vw;
+		padding:10px;
 	}
 	
 	.redButton{
-		font-size:2.5vw;
-		border-radius:1.5vw;
-		padding:1vw 1.5vw;
+		font-size:4vw;
+		border-radius:2vw;
+		padding:1.5vw 2vw;
 		display:block;
 		text-align:center;
-		text-decoration:none;
+		margin:auto;
 	}
 	
 	.person{
