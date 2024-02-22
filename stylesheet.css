@@ -9,7 +9,7 @@ body{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 	
-	background-image:linear-gradient(#0E172C,#1A2541);
+	background-color: #DEDEDE;
 }
 
 @keyframes fadeInAnimation {
@@ -114,7 +114,7 @@ h3{
 /* PRIVACY POLICY */
 .statement{
 	font-size:0.8vw;
-	color:white;
+	color:#0e172c;
 	padding:2vw 5vw;
 }
 
@@ -174,17 +174,21 @@ h3{
 
 
 /* BUTTONS */
-.redButton{
+.redButton, .alumniButton{
 	color:white;
 	background-color:#E00814;
 }
 
-.redButton{
+.redButton, .alumniButton{
 	border-radius:1vw;
 	border-style:none;
 	padding:0.5vw 1vw;
 	font-size:1vw;
 	font-weight:bold;
+}
+
+.alumniButton{
+	clear:left;
 }
 
 /* MEDIA SLIDES */
@@ -199,10 +203,10 @@ h3{
 }
 
 #teamInfo, #competitionInfo{
-	background-image: linear-gradient(#0E172C,#1A2541);
+	background-color: #DEDEDE;
 	height:fit-content;
 	padding:4vw 5vw;
-	color:white;
+	color:#0E172C;
 }
 
 .dropdownText{
@@ -213,9 +217,10 @@ h3{
 
 /* TITLE BANNERS */
 .titleBanner, .statementHeader{
-	background-color:#2F3B67;
-	color:white;
+	background-color:white;
+	color:#0E172C;
 	padding:1.5vw 5vw;
+	clear:left;
 }
 
 .statementHeader{
@@ -232,8 +237,8 @@ h3{
 .person{
 	float:left;
 	border-radius:5vw;
-	background-color:#2F3B67;
-	box-shadow: 5px 10px 5px;
+	background-color:white;
+	box-shadow: 5px 10px 5px #AAAAAA;
 	width:19vw;
 	margin-right:2vw;
 	margin-bottom:2vw;
@@ -252,7 +257,6 @@ h3{
 
 .personImage{
 	border-radius:50%;
-	background-color:white;
 	width:12vw;
 	height:12vw;
 	margin:auto;
@@ -276,7 +280,7 @@ h3{
 .personDesc h3{
 	font-size:1vw;
 	transition:0.5s ease-out;
-	color:white;
+	color:#0E172C;
 	text-align:center;
 }
 
@@ -284,7 +288,7 @@ h3{
 	font-size:0.9vw;
 	transition:0.5s ease-out;
 	margin-top:-1vw;
-	color:white;
+	color:#0E172C;
 	opacity:0.6;
 	font-weight:none;
 	text-align:center;
@@ -292,15 +296,37 @@ h3{
 
 .personDesc p{
 	transition:0.5s ease-out;
-	color:white;
+	color:#0E172C;
 	font-size:0.8vw;
 	font-family:Verdana;
 	text-align:center;
 }
+
+.department{
+	width:80vw;
+	height:fit-content;
+	border-radius:3vw;
+	background-color:white;
+	box-shadow: 5px 10px 5px #AAAAAA;
+	margin-right:2vw;
+	margin-bottom:2vw;
+	padding:10px 20px 30px 30px;
+}
+
+.department h3{
+	font-size:1.2vw;
+	color:#0E172C;
+	margin-top:20px;
+}
+
+.department p{
+	font-size:1vw;
+}
 	
 /* SPONSOR PAGE */
 .partnerImage{
-	width:25%;
+	width:25vw;
+	border-radius:2vw;
 }
 
 .partnerContainer{
@@ -313,15 +339,18 @@ h3{
 	margin-left:5vw;
 	margin-top:2vw;
 	margin-bottom:2vw;
+	background-color:white;
 	display:flex;	
+	width:80vw;
+	box-shadow: 5px 10px 5px #AAAAAA;
+	padding-left:2vw;
 }
 
 .partnerDesc{
-	color:white;
-	width:30vw;
-	padding:1vw 1vw 1vw 2vw;
+	color:#0E172C;
+	padding:2vw;
 	border-left:0.1vw solid white;
-	font-size:0.8vw;
+	font-size:1vw;
 }
 
 
@@ -340,11 +369,21 @@ footer{
 	list-style-type:none;
 	padding:0;
 	margin:0;
+	float:left;
 }
 
 .copy{
 	display:inline;
 	color:#E00814;
+}
+
+.socialIcon{
+	width:3vw;
+	margin-right:1vw;
+}
+
+.socials{
+	margin-left:60vw;
 }
 
 @media only screen and (max-width: 800px){
@@ -355,6 +394,10 @@ footer{
 	
 	.mobileNav{
 		display:block;
+	}
+	
+	.statement{
+		font-size:2vw;
 	}
 	
 	 /* Style the navigation menu */
@@ -425,6 +468,20 @@ footer{
 		font-size:2vw;
 	}
 	
+	.footerList, .socials{
+		float:none;
+	}
+
+	.socials{
+		margin-top:5vw;
+		margin-left:0;
+	}
+	
+	.socialIcon{
+		width:8vw;
+		margin-right:5vw;
+	}
+	
 	#leftHeader{
 		width:100%;
 		float:none;
@@ -435,7 +492,7 @@ footer{
 		margin:auto;
 		width:20vw;
 		margin-bottom:0;
-		margin-top:20px;
+		padding-top:10px;
 	}
 	
 	header h2{
@@ -455,7 +512,7 @@ footer{
 	}
 	
 	header p{
-		font-size:3vw;
+		font-size:2.5vw;
 		width:80vw;
 		text-align:center;
 		display:block;
@@ -468,26 +525,28 @@ footer{
 		height:70vw;
 	}
 	
-	
-	
 	.titleBanner h3{
-		font-size:4vw;
+		font-size:3vw;
 		width:100%;
 		margin-left:10px;
 	}
 	
 	.dropdownText{
-		font-size:2.8vw;
+		font-size:2.5vw;
 		padding:10px;
 	}
 	
-	.redButton{
-		font-size:4vw;
+	.redButton, .alumniButton{
+		font-size:3.5vw;
 		border-radius:2vw;
-		padding:1.5vw 2vw;
+		padding:2vw 2.5vw;
 		display:block;
 		text-align:center;
 		margin:auto;
+	}
+	
+	.alumniButton{
+		clear:left;
 	}
 	
 	.person{
@@ -501,8 +560,13 @@ footer{
 		margin-top:3vw;
 	}
 	
-	.personDesc{
-		
+	.personDesc h3{
+		font-size:2.2vw;
+		font-weight:bold;
+	}
+	
+	.personDesc h4{
+		font-size:1.9vw;
 	}
 	
 	.person:hover .personImage{
@@ -510,15 +574,16 @@ footer{
 		height:28vw;
 	}
 	
-	.partnerImageDiv{
-		float:none;
+	.department h3{
+		font-size:2.2vw;
 	}
 	
+	.department p{
+		font-size:2vw;
+	}
+	
+	/* SPONSORSHIPS */
+	
 	.partnerDesc{
-		width:100%;
-		padding:1vw 1vw 1vw 2vw;
-		border-left:none;
-		border-bottom:0.1vw solid white;
-		font-size:1.8vw;
 	}
 }
