@@ -1,11 +1,17 @@
-Hello!
+# Formula Student Team Napier
 
-This is the repository used for the Formula Student Team Napier website!
-**CURRENTLY A WORK IN PROGRESS**
+This repository is the home of the source code for the FSTN website. Learn more about the competition, our team, our amazing sponsors and how to join us! 
 
-Any suggestions would be greatly appreciated. 
+## Motivation
 
-Page Outline:
-index.html = Main landing page of the website, includes snippets of information about the team, its sponsors and the competition itself.
-sponsors.html = a full list of our sponsors and their descriptions/impact to our team.
-team.html = a list of management - coming soon alumni and full team list.
+The motivation behind this website was formulated when a revamp for our outdated wix website was very much necessary. This change aided in keeping our information up-to-date and relevant, but also helped us redirect funding towards our technical and driverless teams. 
+
+## Contributors
+
+Amy Anderson - 40542677@live.napier.ac.uk - Web Design and Development Student
+
+## Languages
+
+HTML
+CSS
+JavaScript
