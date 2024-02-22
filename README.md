@@ -4,7 +4,7 @@ This repository stores the source code for the official Formula Student Team Nap
 
 ## Motivation
 
-Our old website used a popular website template and hosting company, which was quite costly on top of owning our domain, so naturally, once the resources and time allowed we decided to create our own site. This aids in cutting down costs within our PR department to allow for more funding to go towards the development of our competition car and AI programming teams. 
+Our old website utilised a popular website template and hosting company, which was quite costly on top of owning our domain, so naturally, once the resources and time allowed we decided to create our own site. This aids in cutting down costs within our PR department to allow for more funding to go towards the development of our competition car and AI programming teams. 
 
 ## Contributors
 
