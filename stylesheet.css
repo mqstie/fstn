@@ -537,6 +537,11 @@ footer{
 		margin-left:10px;
 	}
 	
+	.applicationBanner p{
+		font-size:2.5vw;
+		margin-left:10px;
+	}
+	
 	.dropdownText{
 		font-size:2.5vw;
 		padding:10px;
