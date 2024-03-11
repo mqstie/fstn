@@ -216,11 +216,16 @@ h3{
 
 
 /* TITLE BANNERS */
-.titleBanner, .statementHeader{
+.titleBanner, .statementHeader, .applicationBanner{
 	background-color:white;
 	color:#0E172C;
 	padding:1.5vw 5vw;
 	clear:left;
+}
+
+.applicationBanner{
+	background-color:#E00814;
+	color:white;
 }
 
 .statementHeader{
@@ -526,7 +531,7 @@ footer{
 		height:70vw;
 	}
 	
-	.titleBanner h3{
+	.titleBanner h3, .applicationBanner h3{
 		font-size:3vw;
 		width:100%;
 		margin-left:10px;
